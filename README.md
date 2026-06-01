@@ -112,7 +112,6 @@ Excel 包含字段（以 SAP 实际导出为准）：项目名称、乙方名称
 sap-tz/
 ├── SKILL.md                # Skill 说明（供 AI agent 阅读）
 ├── oa_pwd.txt.example     # 凭据模板（勿提交真实凭据）
-├── baobiao.js             # Playwright 录制参考（仅供理解报表页面操作）
 └── scripts/
     ├── sap-report.sh      # 主执行脚本
     ├── gen_js.py          # 生成填写搜索条件的 JavaScript
@@ -206,19 +205,10 @@ A: 这是本 skill 的**核心阻塞问题**。报表在跨域 iframe 内，CDP 
 ## 注意事项
 
 - ⚠️ 浏览器自动化对网络条件苛刻，如网络较差可能因为 timeout 时间不足而无法顺利进入下一阶段
-- ⚠️ 技能能否稳定运行与 SAP 系统响应速度、网络状况有直接关系
+- ⚠️ 技能能否稳定运行与模型能力尤其上下文窗口有直接关系
 - ✅ 用户名和密码推荐使用环境变量 `SAP_USER` / `SAP_PASS`
 - ⚠️ 导出的 Excel 默认存放于 `~/Downloads/`，用户可根据自身情况调整
 - ⚠️ SAP Portal URL 需要在 `sap-report.sh` 中配置，或通过环境变量 `SAP_PORTAL_URL` 指定
-- ⚠️ **请勿将 `oa_pwd.txt` 提交到 Git 仓库**，已加入 `.gitignore`
-
-## .gitignore 建议
-
-```
-oa_pwd.txt
-*.crdownload
-.DS_Store
-```
 
 ## 许可
 
