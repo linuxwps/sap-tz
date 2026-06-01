@@ -76,16 +76,6 @@ Portal (8001)
       └── isolatedWorkArea (EmptyDocument)
 ```
 
-### Playwright 录制参考
-
-录制文件位置：`scripts/baobiao.js`（仅供参考，本 skill 不直接使用 Playwright）
-
-关键信息：
-- SAP Portal 在 popup 新窗口打开（`waitForEvent('popup')`）
-- 导航路径：招采管理 → 报表管理 → 合同台账报表(成本)
-- 搜索字段：项目名称、乙方名称、合同编号（textbox role）
-- 导出按钮：`getByTitle('导出至电子表格 ')`（末尾有空格）
-
 ## 文件说明
 
 | 文件 | 用途 |
