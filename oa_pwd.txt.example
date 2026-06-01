@@ -1,0 +1,7 @@
+# 请填写 SAP 登录用户名（第一行）和密码（第二行）
+# 例如：
+# your_username
+# your_password
+#
+# ⚠️ 请勿将此文件提交到 Git 仓库
+# 建议使用环境变量 SAP_USER / SAP_PASS 代替此文件
