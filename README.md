@@ -179,8 +179,7 @@ sap-tz/
 **可能的解决方向（待验证）：**
 1. 使用 CDP `Runtime.evaluate` 的 `contextId` 或 `frameId` 参数指定执行上下文
 2. 在 Playwright 层面用 `page.frame(url)` 获取跨域 frame 对象再操作
-3. 参考 Playwright 录制代码（`baobiao.js`）中的 frame 切换方式
-4. 构造不带 session token 的报表 URL，让 SAP 自己做 SSO 重定向
+3. 构造不带 session token 的报表 URL，让 SAP 自己做 SSO 重定向
 
 ## 常见问题
 
